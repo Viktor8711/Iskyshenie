@@ -32,26 +32,29 @@ body {
  #my_player{
  	 top: 100px;
 	 left: 100px;
+	 margin: auto;
 	 
  }
  #my_info{
  	position: relative;
+	margin: auto;
   height: 150px;
-  top: 200px;
+  top: 250px;
 	
  }
  #chatovod242776{
  	position: relative;
- 	top: 150px;
+	margin: auto;
+ 	top: -350px;
 	height:100px;
 	width:550px;
-	left: 500px;
+	left: 210px;
  }
  #my_table_form{
  	position: relative;
- 	top: 150px;
-	height:100px;
-	width:550px;
+ 	top: 50px;
+	width:10px;
+	left: 10px;
  }
 </style>
 
@@ -63,7 +66,7 @@ body {
         <img id="logo_img" height="100" src="http://radio-music-time.tw1.su/wp-content/uploads/2018/03/выу.png" alt="Logo">
     </div>
         <br><br><br><br>
-	
+
 <center>
 <div id="my_player" class="my_player" data-player="default" data-skin="" data-width="150" data-autoplay="1" data-volume="10" data-streamurl="https://myradio24.org/81293"></div></center>
 <center><div class="my_info" style="visibility: visible;">
@@ -92,18 +95,18 @@ body {
 </table>
 </div></center>
 <!--TABLE - Блок расположения стола заказов. -->
-<b>Стол заказов</b><br><br>
+
 <style>#my_table_on {display:none;}</style>
 <div id=my_table_off>Сейчас заказы не принимаются.</div>
 <div id=my_table_on>
-	<form id=my_table_form action="" method=post accept-charset="UTF-8">	
+<form id=my_table_form action="" method=post accept-charset="UTF-8">	<b>Стол заказов</b><br><br>
 		<input type=text id=my_table_from maxlength=30 value="" placeholder="От кого*">
 		<input type=text id=my_table_for maxlength=30 value="" placeholder="Для кого">
 		<br>
 		<input type=text id=my_table_artist maxlength=50 value="" placeholder="Исполнитель*">
 		<input type=text id=my_table_song maxlength=50 value="" placeholder="Название трека*">
 		<br>
-		<textarea id=my_table_comment cols=50 rows=3 maxlength=500 placeholder="Ваш комментарий"></textarea><br>
+		<textarea id=my_table_comment cols=50 rows=3 maxlength=50 placeholder="Ваш комментарий"></textarea><br>
 		* - поля обязательные для заполнения<br>
 		<input type=submit value="Заказать музыку к исполнению"> (в очереди <b id="my_table_turn">0</b> заказов)
 	</form>
