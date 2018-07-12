@@ -45,6 +45,13 @@ body {
  	top: 150px;
 	height:100px;
 	width:550px;
+	left: 500px;
+ }
+ #my_table_form{
+ 	position: relative;
+ 	top: 150px;
+	height:100px;
+	width:550px;
  }
 </style>
 
@@ -84,6 +91,24 @@ body {
 </tbody>
 </table>
 </div></center>
+<!--TABLE - Блок расположения стола заказов. -->
+<b>Стол заказов</b><br><br>
+<style>#my_table_on {display:none;}</style>
+<div id=my_table_off>Сейчас заказы не принимаются.</div>
+<div id=my_table_on>
+	<form id=my_table_form action="" method=post accept-charset="UTF-8">	
+		<input type=text id=my_table_from maxlength=30 value="" placeholder="От кого*">
+		<input type=text id=my_table_for maxlength=30 value="" placeholder="Для кого">
+		<br>
+		<input type=text id=my_table_artist maxlength=50 value="" placeholder="Исполнитель*">
+		<input type=text id=my_table_song maxlength=50 value="" placeholder="Название трека*">
+		<br>
+		<textarea id=my_table_comment cols=50 rows=3 maxlength=500 placeholder="Ваш комментарий"></textarea><br>
+		* - поля обязательные для заполнения<br>
+		<input type=submit value="Заказать музыку к исполнению"> (в очереди <b id="my_table_turn">0</b> заказов)
+	</form>
+</div>
+<!--END TABLE-->
 	<script src="//myradio24.com/player/player.js?v3.10" data-port="81293" data-interval=15></script>
 	
 	
