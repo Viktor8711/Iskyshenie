@@ -17,21 +17,6 @@ body {
         background-size: cover;
 }
 
-#window{
-    display: none;
-    width: 200px;
-    height: 30px;
-
-    background-color: #323B55; 
-    border-radius: 20px;
-    float: right;
-    top: 1%;
-
-    font-family: sans-serif;
-    color: white;
-}    
-    a {color:white;}
-    a:hover { color:white;}
 #center_img{
  	 float: left;
     position: relative;
@@ -44,6 +29,23 @@ body {
     
 
  }
+ #my_player{
+ 	 top: 100px;
+	 left: 100px;
+	 
+ }
+ #my_info{
+ 	position: relative;
+  height: 150px;
+  top: 200px;
+	
+ }
+ #chatovod242776{
+ 	position: relative;
+ 	top: 150px;
+	height:100px;
+	width:550px;
+ }
 </style>
 
 
@@ -55,16 +57,16 @@ body {
     </div>
         <br><br><br><br>
 	
-	
-	<div id="my_player" class="my_player" data-player="default" data-skin="" data-width="200" data-autoplay="0" data-volume="10" data-streamurl="https://myradio24.org/81293"style="top:50px; left:10px">
-<div class="my_info" style="visibility: hidden; top:100px;">
+<center>
+<div id="my_player" class="my_player" data-player="default" data-skin="" data-width="150" data-autoplay="1" data-volume="10" data-streamurl="https://myradio24.org/81293"></div></center>
+<center><div class="my_info" style="visibility: visible;">
     <table>
 <tbody>
 <tr><td><b><big>Слушают:</big></b></td><td title='Лимит слушателей: %limit%'><b>🎧 %listeners%</b></td></tr>
 </tbody>
 </table>
-</div>
-<div class="my_info" style="visibility: hidden; top:110px;">
+</div></center>
+<center><div class="my_info" style="visibility: hidden;">
     <table>
 <tbody>
 <tr>
@@ -72,8 +74,8 @@ body {
 </tr>
 </tbody>
 </table>
-</div>
-<div class="my_info" style="visibility: hidden; top:50px;">
+</div></center>
+<center><div class="my_info" style="visibility: hidden;">
     <table>
 <tbody>
 <tr>
@@ -81,7 +83,7 @@ body {
 </tr>
 </tbody>
 </table>
-</div>
+</div></center>
 	<script src="//myradio24.com/player/player.js?v3.10" data-port="81293" data-interval=15></script>
 	
 	
