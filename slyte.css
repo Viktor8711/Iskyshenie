@@ -1,0 +1,63 @@
+fieldset {
+    border: 1px solid #aaa;
+	  color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px #aaa;
+    background-color: #fcfc;
+	  background-image: url(https://city-sochi.ru/wp-content/uploads/2017/12/novogodnie-elki-sochi.jpg);
+	  text-align: right;
+	  background-size: 495px;
+}
+legend {
+	background-color: #1E90FF;
+	border: 1px solid #dcdc;
+	border-radius: 10px;
+	padding: 2px 15px;
+}
+.chatemplate {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background-image: url(https://radio-music-time.su/wp-content/uploads/2018/12/56.png);
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:150px;/* размер изображения равен (или меньше) размеру кнопки вызова*/
+  width: 180px; /* ширина кнопки вызова */
+  height: 200px; /* высота кнопки вызова */
+} 
+.parent_popup, 
+.parent_popup_click {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.popup, 
+.popup_click { 
+  max-width: 500px;
+  width:70%;
+  margin: 10% auto;
+  position: relative;
+} 
+.popup_click::after {  
+ position:absolute;  
+ bottom:2px;  
+ right:5px;  
+ content:'РАДИО "Музыка времени"';   
+ font-size:10px;
+}
+.close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -20px;
+  left: -20px;
+  background-image: url(//st1.chatovod.ru/i/orangebox/close.png);
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+}
