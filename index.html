@@ -18,7 +18,7 @@ body {
 #center_img{
  	 float: left;
     position: relative;
-    left: 50%;
+    left: 20%;
  }
  #logo_img{
  	float: left;
@@ -26,16 +26,7 @@ body {
     left: -50%;
     
  }
-
- 
- #chatovod242776{
- 	position: relative;
- 	top: 50px;
-	height:10px;
-	width:750px;
-	left: 10px;
- }
-	fieldset {
+ fieldset {
     border: 1px solid #aaa;
 	  color: #fff;
     border-radius: 8px;
@@ -43,13 +34,20 @@ body {
     background-color: #fcfc;
 	  background-image: url(https://city-sochi.ru/wp-content/uploads/2017/12/novogodnie-elki-sochi.jpg);
 	  text-align: right;
-	  background-size: 495px;
+		width: 500px;
+		margin-left: 500px;
+	 
 }
 legend {
 	background-color: #1E90FF;
 	border: 1px solid #dcdc;
 	border-radius: 10px;
 	padding: 2px 15px;
+	
+}
+.info_class {
+	width: 10%;
+	
 }
 .chatemplate {
   position: fixed;
@@ -99,17 +97,28 @@ legend {
   z-index: 1000;
 }
 
+
+ 
+ #chatovod242776{
+ 	position: relative;
+ 	top: 50px;
+	height:10px;
+	width:750px;
+	left: 10px;
+ }
 </style>
 
 
 </head>
+<div class="header">
 <header>
-
     <div id="center_img">
         <img id="logo_img" height="100" src="http://radio-music-time.su/wp-content/uploads/2018/02/5a8b18c8-0ff4-4ca2-95fa-7808e4cc7795-e1521994085218.jpg" alt="Logo">
     </div>
         <br><br><br><br>
-<div id="info_1">				
+				</header>
+				<div id="content">
+				<div id="info_class">
 <fieldset>
 <legend>
     <div class="blok">
@@ -151,9 +160,9 @@ legend {
 <!--END VISUALIZER-->
 </fieldset>
 </div>
-</header>
-<!-- всплывающее окно с виджетом чата chate<mplate -->
-
+</div>
+</div>
+<!-- всплывающее окно с виджетом чата chatemplate -->
 <a href="javascript:void(0)" class="chatemplate" onclick="this.nextElementSibling.style.display='block';"></a>
 <div id="parent_popup_click1" class="parent_popup_click">
 <div class="popup_click">
